@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+   <picture>
+    <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+    <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto.p.png" alt="Imagens Fléxiveis">
+   </picture>
+
+   <h1>Reproduzindo Audios</h1>
+   <!--Comandos pra inserir audio, usar a tag AUDIO e selecionar o arquivo em mp3 q vai ser colocado, para que o contolador do audio apareça tag CONTROLS e o AUTOPLAY para reproduzir-->
+   <p>Vamos Aprender a reproduzir áudios em HTML 5</p>
+   <!--Formatos de audio MP3, WAV e OGG-->
+   <!-- 
+    MP3 - <source src="midia/guanacast-33.mp3" type="audio/mpeg"> MP3
+   
+    OGG - <source src="midia/guanacast-33.ogg" type="audio/OGG"> 
+   
+    WAV - <source src="midia/guanacast-33.wav" type="audio/WAV"> -->
+    <!--se você colocar os 3 tipos ele tentarar carregar os audios seguindo a ordem que você os colocaram  no site-->
+    <!--Priorizar o uso do MP3 por ser mais rápido e simples pra sites OGG tnm pode ser usado. E tentar evitar ao máximo o uso de WAV po ser muito pesado pra sites-->
+   <audio preload="auto" autoplay controls loop >
+   <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+   <source src="midia/guanacast-33.ogg" type="audio/OGG">
+   <source src="midia/guanacast-33.wav" type="audio/WAV">
+   <p>Infelizmente seu navegador não consegue reproduzir áudio.
+    <a href="midia/guanacast-33.mp3">Click aqui para baixar o arquivo MP3</a>
+   </p>
+   </audio>
+</body>
+</html> 

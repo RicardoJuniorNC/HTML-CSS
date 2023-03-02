@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*O uso de 2 pontos "::" é pra definir os pseudo-elementos em CSS */
+        
+        body{
+            /* SIMBOLOGIAS PRINCIPAIS DAS CSS
+                #  = id
+                .  = class
+                :  = pseudo-class
+                :: = pseudo-element
+                >  = children
+            */
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        /*Config padrão*/
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*Config de sites já visitado*/
+        a:visited {
+            color: #0109ff
+        }
+        /*Config mudar cor passando o mouse */
+        a:hover {
+            color:black;
+            text-decoration: underline;
+        }
+        /*Config muda cor ao clickar*/
+        a:active {
+            color:yellow;
+        }
+        
+        .especial{
+            background-color: rgba(139, 0, 0, 0.605);
+            color: white;
+        }
+        .especial::before{
+            content: '➡ ';
+            color: darkgrey;
+        }
+        /*Indicação que são links no final da linha*/
+        .especial::after {
+            content:  ' ⬅' ;
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+        /*POde-se adicionar edições extras ou especiais tbm basta coloca-las antes com "." e cololar pois pontos no final":" */
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://web.facebook.com/profile.php?id=100008087373703">Facebook</a></li>
+        
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios/modulo-01" class="especial">Repositório GitHub</a></li>
+        
+        <!--target:_blank pra abrir link em outra guia-->
+        <li><a href="https://www.youtube.com/channel/UCReuzeoJtxr1Iova9Fr9KiQ" target="_bla
+            " class="especial">YouTube</a></li>
+    </ul>
+</body>
+</html>

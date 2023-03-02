@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /*Sombra cinza*/
+            box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.466);
+        }
+
+        h1{
+            /*sombra interna (NÃO RECOMENDADA)*/
+            box-shadow: inset 2px 1px 14px 6px black;
+            /*se tirar o INSET a sombra vai pra fora*/
+        }
+
+        nav {
+            background-color: rgb(103, 101, 101);
+            padding: 10px;
+            /*Sombra cinza*/
+            box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.466);
+            /*
+            BORDER-RADIUS: para arredondar os cantos.
+            SEM EXAGERO
+            Pode ser atribuido os valores sozinho, em dois ou um pra cada elemento
+            */
+            border-radius: 10px 0px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        
+        main {
+            background-color: white ;
+            padding: 10px;
+            margin: 10px;
+            /*Sombra preto*/
+            box-shadow: 3px 3px 2px black;
+            /*
+            BORDER-RADIUS: para arredondar os cantos.
+            EXAGERADO
+            Pode ser atribuido os valores sozinho, em dois ou um pra cada elemento
+            */
+            border-radius: 32px 62px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer > p {
+            margin:0px;
+        }
+
+        div#bola{
+            /*
+            para fazer uma bola usar height, width, margin, usar uma cor de fundo e ajustar border-radius pra 50%.
+            */
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <H1>Meu site</H1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+        
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article> 
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, harum ut. Assumenda fugit, praesentium ipsa placeat excepturi dolor omnis porro pariatur reiciendis temporibus soluta, rem at a quod non atque.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        Desenvolvido por Ricardo Jr.
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
