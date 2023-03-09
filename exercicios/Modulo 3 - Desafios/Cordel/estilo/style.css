@@ -31,15 +31,14 @@ header {
     background-color: black;
     color: white;
     font-family: var(--fonte2);
-    text-decoration: bold;
-    font-size: 136px;
+    font-variant: small-caps;
     text-align: center;
 
 }
 
 header > h1 {
     font-size: 135px;
-    padding-top: 65px;
+    padding-top: 50px;
     font-family: var(--fonte2);
 }
 
@@ -51,9 +50,9 @@ header > p {
 
 section {
     font-family: var(--fonte3);
-    font-size: 50px;
-    padding-top: 90px;
-    padding-left: 33px;
+    font-size: 60px;
+    padding-top: 80px;
+    padding-left: 35px;
 }
 
 section.branco {
@@ -61,12 +60,8 @@ section.branco {
 }
 
 section.image1{ 
-    background-color: darkgray;
-    background-image:"background001.jpg";
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    display: inline-block;
+    background-image: url (.."imagens/background001.jpg");
 }
 
 section.image2{
