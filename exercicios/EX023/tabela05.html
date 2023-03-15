@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios tabela</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+        }
+
+        tr.destaque {
+            background-color: greenyellow;
+        }
+        col.cnome {
+            background-color: rgba(128, 255, 0, 0.568);
+        }
+        col.cidade {
+            background-color: rgba(255, 255, 0, 0.493);
+        }
+        col.azul {
+            background-color: rgba(0, 0, 255, 0.692);
+        }
+        col.vermelho {
+            background-color: rgba(255, 0, 0, 0.671);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    
+    <table>
+        <colgroup>
+            <col class="cnome"> 
+            <col class="azul">
+            <col class="cidade">
+            <col class="vermelho">
+        </colgroup>
+        
+        <caption>Cadastro</caption>
+        
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Érica</td>
+            <td>F</td>
+            <td>34</td>
+            <td>Médica</td>
+        </tr>    
+        <tr>
+            <td>Henrique</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Enfermeiro</td>
+        </tr>    
+        <tr>
+            <td>Fernando</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Mécanico</td>
+        </tr>    
+        <tr>
+            <td>Tom</td>
+            <td>M</td>
+            <td>17</td>
+            <td>Pizzaiolo</td>
+        </tr>    
+        <tr>
+            <td>Vanessa</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Telemarketing</td>
+        </tr>    
+        <tr>
+            <td>Fabricio</td>
+            <td>M</td>
+            <td>31</td>
+            <td>Motoboy</td>
+        </tr>    
+        <tr>
+            <td>Melissa</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Recepcionista</td>
+        </tr>    
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Farmaceutica</td>
+        </tr>    
+        <tr>
+            <td>Dolores</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Diarista</td>
+        </tr>    
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>25</td>
+            <td>"YouTuber"</td>
+        </tr>    
+        <tr>
+            <td>Luiz</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Báncario</td>
+        </tr>
+    </table>
+</body>
+</html>
