@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de iframe</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
+            padding: 3px;
         }
 
         iframe#tela {
-            width: 94vw;
-            height: 400px;
+            width: 96vw;
+            height: 627px;
             border: 1px solid black;
         }
     </style>
@@ -30,10 +35,10 @@
     </ul>
 
     <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, non! Cum provident architecto officiis pariatur mollitia rem sed quaerat commodi blanditiis eveniet et, facere assumenda quasi sit recusandae tenetur voluptas?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, non!facere assumenda quasi sit recusandae tenetur voluptas?
     </p>
 
-    <iframe id="tela" name="frame" src="">
+    <iframe id="tela" name="frame" srcdoc="<h1>ESCOLHA UMAS DAS OPÇÕES ACIMA</h1> <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dicta enim necessitatibus et quae, consectetur quisquam minima molestiae ratione aliquam amet esse in. Maiores doloremque magnam id assumenda aperiam numquam.</p> <img src='imagens/yourname.gif'>">
         <p>Infelizmente o seu navegador não é compatível com isso. </p>
     </iframe>
 
