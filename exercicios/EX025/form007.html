@@ -4,15 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementos Sem Input</title>
+    <title>Exemplo de formulário</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
     <h1>
-        Testes
+        Formulário Testes
     </h1>
+    <fieldset>
+        <legend>Comandos Sem Input</legend>
+            <form action="cadastro.php" method="post" autocomplete="on">
+            <p>    
+                <label for="iest">Estados: </label>
+                <select name="estado" id="iest">
+                
+                <option value="" selected>--- Escolha ---</option>    
+                    <optgroup label="Região Sudeste">
+                    <option name="SP" id="">São Paulo</option>
+                    <option name="RJ" id="">Rio de Janeiro</option>
+                    <option name="MG" id="">Minas Gerais</option>
+                    </optgroup>
+                    
+                    <optgroup label="Região Nordeste">
+                    <option name="RN" id="">Rio grande do Norte</option>
+                    <option name="PE" id="">Pernambuco</option>
+                    <option name="MA" id="">Maranhão</option>
+                    </optgroup>
+                </select>
+            </p>
+            
+            <p>
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="profissão" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option >Contabilista</option>
+                    <option >Desenvolvedor</option>
+                    <option >Professor</option>
+                </datalist>
+            </p>
+            
+            <p>
+                <label for="imsg">Menssagem: </label> <br>
+                <textarea name="menssagem" id="imsg" cols="30" rows="10"></textarea>
+            </p>
 
-    <p>
-        
-    </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+            </form>
+    </fieldset>
 </body>
 </html>
